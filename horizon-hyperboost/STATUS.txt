@@ -1,1 +1,0 @@
-HyperBoost 0.1.0: engine-independent Rust policy core only. Not an installable Horizon .hnmod and not yet connected to Horizon's renderer.
