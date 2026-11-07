@@ -1,0 +1,19 @@
+[package]
+name = "horizon-hyperboost-core"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+description = "Conservative terrain/entity visibility and LOD policy core for Horizon native-mod integration"
+
+[lib]
+name = "hyperboost"
+path = "src/lib.rs"
+
+[dependencies]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
